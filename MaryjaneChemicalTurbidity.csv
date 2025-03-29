@@ -1,0 +1,23 @@
+WBodyID,WaterBodyName,DataSource,StationID,StationName,Actual_StationID,Actual_Latitude,Actual_Longitude,DEP_WBID,SampleDate,ActivityDepth,DepthUnits,Parameter,Characteristic,Sample_Fraction,Result_Value,Result_Unit,QACode,Result_Comment,Original_Result_Value,Original_Result_Unit
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,2/22/2018 11:40,0.5,m,Turb_ntu,Turbidity,,1.2,NTU,,,1.2,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,5/14/2018 8:55,0.5,m,Turb_ntu,Turbidity,,7.4,NTU,,,7.4,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,7/25/2018 9:55,0.5,m,Turb_ntu,Turbidity,,2.8,NTU,,,2.8,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,8/20/2018 8:57,0.5,m,Turb_ntu,Turbidity,,5.9,NTU,,,5.9,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,11/7/2018 10:45,0.5,m,Turb_ntu,Turbidity,,3.4,NTU,,,3.4,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,3/20/2019 9:55,0.5,m,Turb_ntu,Turbidity,,2.6,NTU,,,2.6,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,6/5/2019 9:45,0.5,m,Turb_ntu,Turbidity,,3.8,NTU,,,3.8,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,9/19/2019 12:00,0.5,m,Turb_ntu,Turbidity,,5,NTU,,,5,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,12/4/2019 13:25,0.5,m,Turb_ntu,Turbidity,,2.5,NTU,,,2.5,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,3/19/2020 9:30,0.5,m,Turb_ntu,Turbidity,,3.6,NTU,,,3.6,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,6/10/2020 9:45,0.5,m,Turb_ntu,Turbidity,,5.6,NTU,,,5.6,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,9/2/2020 9:50,0.5,m,Turb_ntu,Turbidity,,5.5,NTU,,,5.5,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,11/19/2020 9:30,0.5,m,Turb_ntu,Turbidity,,1.4,NTU,,,1.4,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,3/22/2021 9:40,0.5,m,Turb_ntu,Turbidity,,3.7,NTU,,,3.7,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,6/21/2021 9:55,0.5,m,Turb_ntu,Turbidity,,5.7,NTU,,,5.7,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,9/20/2021 9:40,0.5,m,Turb_ntu,Turbidity,,9,NTU,,,9,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,3/15/2023 9:55,0.5,m,Turb_ntu,Turbidity,,5.2,NTU,,,5.2,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,6/15/2023 9:35,0.5,m,Turb_ntu,Turbidity,,12,NTU,,,12,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,8/28/2023 10:00,0.5,m,Turb_ntu,Turbidity,,4.4,NTU,,,4.4,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,11/30/2023 9:35,0.5,m,Turb_ntu,Turbidity,,3.6,NTU,,,3.6,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,3/11/2024 10:25,0.5,m,Turb_ntu,Turbidity,,13,NTU,,,13,NTU
+140326,Lake Mary Jane,WIN_21FLORAN,XMYJNLKES, Lake Mary Jane – Southeast end in front of canal,XMYJNLKES,28.35419723,-81.17495298,3171A,6/3/2024 10:05,0.5,m,Turb_ntu,Turbidity,,11,NTU,,,11,NTU

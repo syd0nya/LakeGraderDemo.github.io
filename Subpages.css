@@ -1,0 +1,95 @@
+/* General rules for all pages */
+p {
+    color: black;
+    /* font-size: 12pt;*/
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: Arial;
+    /*padding: 20px;*/
+    align-content: center;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+}
+
+#hmain>* {
+    margin: 20px;
+    font-size: 12pt;
+}
+
+header {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+
+    width: 100vw;
+    height: 16.666vw;
+    background-image: url("../Images/header.jpg");
+    background-size: 100vw 20vw;
+    align-content: left;
+
+    position: relative;
+    left: 12px;
+
+}
+
+.navbar {
+    font-size: 20px;
+    background-color: rgb(110, 219, 238);
+}
+#navBar {
+    margin-left: 10px;
+    
+}
+
+#logoDiv {
+    position: relative;
+    align-content: left;
+    left: -12px;
+}
+
+#title {
+
+    color: white;
+    font-family: Swanky and Moo Moo;
+    font-size: 35pt;
+    font-stretch: expanded;
+
+
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+@media all and (min-width: 800px) {
+    #title {
+        font-size: 90pt;
+    }
+}
+
+header>div {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#logo {
+    width: 16.666vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#hmain>* {
+    margin: 20px;
+    font-size: 12pt;
+    overflow-wrap: break-word;
+}

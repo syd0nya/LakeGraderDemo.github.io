@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header ---------------------------------------------------------------------->
+
+<head>
+    <!-- Meta data and title -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chemical</title>
+
+    <!-- Linking our JavaScript and CSS -->
+    <link href="Subpages.css" rel="stylesheet">
+    <script src="Chemical.js" defer></script>
+
+    <!-- Bootstrap CSS had to change this for footer to work-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Font link -->
+    <link href='https://fonts.googleapis.com/css?family=Swanky and Moo Moo' rel='stylesheet'>
+</head>
+
+<!-- Body ---------------------------------------------------------------------->
+
+<body>
+
+    <header id="header" class="row">
+        <div id="logoDiv" class="col-2">
+            <img src="../Images/logoPlaceholder.jpg" alt="Lake Grader logo" id="logo">
+        </div>
+    
+        <div id="title" class="col-10">
+            <span id="titleText"><em><strong>Chemical</strong></em></span>
+        </div>
+    </header>
+
+    <!-- Nav bar -->
+    <nav class="navbar" id="navBar">
+        <p id="navBar"><a id="homePage" href="../index.html">Home</a><span id="lakePage-span" > > <a id="lakePage" href="../index.html">Lake
+                </a></span></p>
+    </nav>
+
+    <main id="hmain" class="container">
+        <div class="row">
+            <!-- Lake Image -->
+            <div class="picture col-md-6">
+                <img src="../Images/lakeImage.jpg" alt="lake picture" id="hglacierimg" class="center img-fluid">
+            </div>
+
+            <!-- Lake Information -->
+            <div style="display:none;" id="hselector">
+                <br>
+                <select id="hlakes-input" list="hlakes" class=".form-select" placeholder="Choose your lake">
+                                <datalist id="hlakes">
+                                    <option value="" disabled selected>Choose a Lake</option>
+                                    <option value="Crescent">Lake Crescent</option>
+                                    <option value="Mary Jane">Lake Mary Jane</option>
+                                    <option value="Pickett">Lake Pickett</option>
+                                    <option value="Speer">Lake Speer</option>
+                                    <option value="Virginia">Lake Virginia</option>
+                                </datalist>
+                                </select>
+            
+                <input id="lake-selector-button" type="button" onclick="chooseLake()" value="Choose">
+                <span style="display:none;" id="error-lake"><p>You must select a <span style="display:none;" id="error-incorrect-lake"> valid</span>
+                lake</p></span>
+                </input>
+            </div>
+
+            <div id="lake-info" class="content r col-md-6">
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+        <div id="data" class="row">
+            <!-- Turbidity Explanation -->
+            <div class="col-md-6">
+                <p>
+                    Turbidity refers to the cloudiness or haziness of water caused by suspended particles such as sediment, algae, organic matter, or microscopic organisms. 
+                    It is an essential indicator of water quality in lakes and other water bodies. 
+                    High turbidity can significantly affect the safety of a lake. Florida has sets its turbidity standard for lakes at 29 NTU's above the natural background.
+                </p>
+            </div>
+
+            <!-- Bar Chart Section -->
+            <div class="col-md-6 mt-5">
+                <div style="border-style:solid"><canvas id="chemicalChartTurb"></canvas></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    Phosphorus occurs naturally in the environment and is an essential nutrient that plants and
+                    animals need to grow. However, too much phosphorus can impact the amount and types of
+                    algae found in a waterbody and may contribute to the development of algal blooms. Algal blooms can detract from the recreational
+                    use of water and, in some cases, can result in deoxygenation of deep waters leading to mortality
+                    of species such as lake trout. The Environmental Protection Agency puth the treshold at 50 µg/L (micrograms per liter).
+                    Everything below this level should be considered safe.
+                </p>
+            </div>
+            
+            <!-- Bar Chart Section -->
+            <div class="col-md-6 mt-5">
+                <div style="border-style:solid"><canvas id="chemicalChartPhos"></canvas></div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-info text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Address-->
+                <div class="col-4">
+                    <p><strong>Address</strong></p>
+                    <p>1000 Holt Avenue Winter Park, <br>FL 32789</p>
+                </div>
+                <!-- Sources-->
+                <div class="col-4">
+                    <p><strong>Sources</strong></p>
+                    <a id="sources" href="Sources.html">Click here to see all sources</a>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-4">
+                    <p><strong>Contact Us</strong></p>
+                    <p>Email: freshwateralliance@rollins.edu</p>
+                    <p>Phone: (111) 111-1111</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://facebook.com">
+                        <img src = "../Images/facebook-logo.png" alt="Facebook" width="30">
+                    </a>
+                </div>
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://twitter.com">
+                        <img src = "../Images/twitter-logo.png" alt="Twitter" width="30">
+                    </a>
+                </div>
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://www.instagram.com/freshwateralliance_rollins/">
+                        <img src = "../Images/instagram-logo.png" alt="Instagram" width="30">
+                    </a>
+                </div>
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://linkedin.com">
+                        <img src = "../Images/linkedin-logo.png" alt="LinkedIn" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

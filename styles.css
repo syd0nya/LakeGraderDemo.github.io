@@ -1,0 +1,216 @@
+/* General rules for all pages */
+p {
+    color: black;
+   /* font-size: 12pt;*/
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: Arial;
+    /*padding: 20px;*/
+    align-content: center;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+    
+    
+}
+
+#hmain > * {
+    margin: 20px;
+    font-size: 12pt;
+}
+
+header {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+
+    width: 100vw;
+    height: 16.666vw;
+    background-image: url("../Images/header.jpg");
+    background-size: 100vw 20vw;
+    align-content: left;
+
+    position: relative;
+    left: 12px;
+
+}
+
+#logoDiv {
+    position: relative;
+    align-content: left;
+    left: -12px;
+}
+
+#title {
+
+    color: white;
+    font-family: Swanky and Moo Moo;
+    font-size: 35pt;
+    font-stretch: expanded;
+
+
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+@media all and (min-width: 800px){
+    #title {
+        font-size: 90pt;
+    }
+}
+
+header > div {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#logo {
+    width: 16.666vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.content {
+    text-align: left; 
+    margin-bottom: 30px;
+}
+
+footer {
+    font-size: 9pt;
+    width: 100vw;
+}
+/* Homepage Rules --------------------------------------------------------------------- */
+
+#map {
+    width: 80vw;
+    height: 80vw;
+    margin: auto;
+}
+
+@media all and (min-width: 900px){
+    #map {
+            width: 600px;
+            height: 600px;
+        }
+}
+
+
+
+
+#hnav {
+    background-color:rgb(110, 219, 238);
+    width: 100vw;
+    
+    position: relative;
+    left: 12px;
+}
+
+#hnav > div {
+    border: 1px solid black;
+    height: 35px;
+    text-align: center;
+    display: table-cell;
+
+}
+
+#hnav > div > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#hglacierimg {
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+#glacierCaption {
+    font-size: 10pt;
+    color: gray;
+}
+
+#hLakeGrader {
+    margin-top: 20px;
+}
+
+#hLakeGraderFigure {
+    text-align: center;
+}
+
+#hselector {
+    margin: auto;
+    text-align: center;
+}
+
+#hlakes-input {
+    width: 70%;
+}
+
+#map {
+    z-index: 1;
+}
+#popup {
+    display: block;
+
+    position: relative;
+    z-index: 3;
+}
+
+#modal-body > * {
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media all and (min-width: 900px){
+    #popup {
+        width: 40vw;
+        height: 40vw;
+        top: 0;
+        left: -30vw;
+    }
+}
+
+#popupContainer {
+    text-align: center;
+    margin: auto;
+    
+}
+
+#popupContainer > * {
+    margin: auto;
+}
+
+#lakeGrade {
+    text-align: center;
+}
+
+
+/* Animal Stuff ----------------------------------------------------------------------- */
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4CAF50 0% 30%,
+        #FF9800 30% 60%,
+        #2196FE 60% 85%,
+        #f44336 85% 100%
+    );
+}
+
+.label {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,305 @@
+<!--
+    Homepage for final project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Head ---------------------------------------------------------------------->
+
+<head>
+    <!-- Meta data and title -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomePage</title>
+ 
+    <!-- Linking our javascript and css-->
+    <link href="Pages/styles.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+
+    <!-- Bootstrap links (these were not working when implementing any bootstrap class)
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font link -->
+    <link href='https://fonts.googleapis.com/css?family=Swanky and Moo Moo' rel='stylesheet'>
+
+    <!-- Links for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+</head>
+
+<!-- Body ---------------------------------------------------------------------->
+<body>
+    
+
+    <!-- Header -->
+    <header id="header" class="row">
+        <div id="logoDiv" class="col-2">
+            <img src="Images/logoPlaceholder.jpg" alt="Lake Grader logo" id="logo">
+        </div>
+
+        <div id="title" class="col-10">
+            <span id="titleText"><em><strong>Lake Grader</strong></em></span>
+        </div>
+    </header>
+
+    <nav id="hnav" class="row">
+        <div class="col-6"><a href="#hFreshwaterLakes">Freshwater Lakes</a></div>
+        <div class="col-6"><a href="#hLakeGrader">Lake Grader</a></div>
+    </nav>
+    
+
+    <!-- Main body -->
+    <main id="hmain" class="container-fluid">        
+
+        <div id="hFreshwaterLakes" class="row">
+            <h1 class="col-12">Freshwater Lakes</h1>
+        </div>
+        
+        <div id="hFreshwaterLakesText" class="row">
+            <div id="htext1" class="col-md">
+                <p> &emsp;&emsp;Though we often hear references to freshwater, we rarely realize just how integral it is to our lives. Freshwater is
+                responsible for sustaining farming, livestock, and supplying our drinking water. Freshwater also allows the existence of
+                over 125,000 species that depend on clean, fresh water. </p>
+        
+                <p> &emsp;&emsp;What exactly is freshwater though? The exact definition varies depending on the group, though almost every definition is
+                based on freshwater’s lack of salt. The most common definition states that freshwater must have a salt content lower
+                than 1%. While this may seem like a small condition to meet, freshwater comprises only 3% of the total water on Earth,
+                and most it is stored in ice caps and glaciers. The remaining freshwater is found in groundwater, swamps, rivers, and
+                lakes.</p>
+
+                <p> &emsp;&emsp;While the portion of freshwater found in lakes is relatively small, lakes often become a
+                hub for human interaction. This is especially true in Florida, with over 50 freshwater lakes located across the state. From 
+                holidays to a quick weekend break, gathering at a lake is a tried and true tradition of Florida life.</p>
+
+                <p> &emsp;&emsp;Despite this, however, many people don't realize all the factors that influence how safe a lake really is. From recent 
+                weather, to chemical levels, to the ecosystem that resides in a lake, how "safe" a lake is can often be difficult to pin down. This is
+                especially true in the modern day, as we become more aware of how small changes to the environment can have massive effects on our 
+                everyday lives.
+
+
+            </div>
+            <figure id="glacierFigure" class="col-md">
+                <img src="Images/glacier.jpg" alt="Image of a glacier" id="hglacierimg" class="img-fluid">
+                <figcaption id="glacierCaption">An image of a glacier, one of the main locations of freshwater. Almost 70% of all freshwater on Earth resides 
+                    frozen in glaciers. These icy structures provide an important source of water to animals during dry seasons, and help to
+                    resupply other freshwater sources as they melt.</figcaption>
+
+            </figure>
+        </div>
+        
+
+        <div id="hLakeGrader" class="row">
+            <h1>Lake Grader</h1>
+        </div>
+
+        <div id="hLakeGraderText" class="row">        
+            <div id="hLakeGraderText" class="col-md">
+                <p>&emsp;&emsp;As you get ready to visit your local lake, check how safe it is using the Lake Grader! This tool provides a 
+                    quick, easy way for you to determine how safe a lake is. Simply select your desired lake from the drop-down menu and click 
+                    the button to receive that lake's safety rating.
+                </p>
+
+                <p>&emsp;&emsp;Each safety rating is based on a combination of rainfall and turbidity levels in the past few months. To see more
+                    details on the lake's safety rating, click on any of the links below the lake's grade. In addition to rainfall and turbidity
+                    details, there are also details on wildlife found in Orange County's local lake ecosystems available for reference.
+                </p>
+            </div>
+
+            <div id="hLakeGraderFigure" class="col-md">
+
+
+                <div id="map">
+                    <script>
+                        const map = L.map('map').setView([28.48, -81.464], 9);
+
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
+
+                        L.marker([28.58938, -81.34398], {
+                            title: "Lake Virginia", 
+                        })
+        
+                        .bindPopup(`
+                            <span class = "map_popup">
+                            <strong>Lake Virginia</strong><br>
+                            Orange County, FL
+                            </span>
+                        `)
+
+                        .addTo(map)
+
+                        L.marker([28.50815, -81.55958], {
+                            title: "Lake Crescent", 
+                        })
+                    
+                        .bindPopup(`
+                            <span class = "map_popup">
+                            <strong>Lake Crescent</strong><br>
+                            Orange County, FL
+                            </span>
+                        `)
+                        .addTo(map)
+
+                        L.marker([28.37245, -81.17635], {
+                            title: "Lake Mary Jane", 
+                        })
+            
+                        .bindPopup(`
+                            <span class = "map_popup">
+                            <strong>Lake Mary Jane</strong><br>
+                            Orange County, FL
+                            </span>
+                        `)
+    
+                        .addTo(map)
+
+                        L.marker([28.60528, -81.10936], {
+                            title: "Lake Pickett", 
+                        })
+
+                        .bindPopup(`
+                            <span class = "map_popup">
+                            <strong>Lake Pickett</strong><br>
+                            Orange County, FL 
+                            </span>
+                        `)
+
+                        .addTo(map)
+
+                        L.marker([28.48020, -81.59919], {
+                            title: "Lake Speer", 
+                        })
+
+                        .bindPopup(`
+                            <span class = "map_popup">
+                            <strong>Lake Speer</strong><br>
+                            Orange County, FL 
+                            </span>
+                        `)
+    
+                        .addTo(map)
+                    </script>
+                </div>
+
+                <div id="hselector">
+                    <br>
+                    <select id="hlakes-input" list="hlakes" class=".form-select" placeholder="Choose your lake">
+                    <datalist id="hlakes">
+                        <option value="" disabled selected>Choose a Lake</option>
+                        <option value="Crescent">Lake Crescent</option>
+                        <option value="Mary Jane">Lake Mary Jane</option>
+                        <option value="Pickett">Lake Pickett</option>
+                        <option value="Speer">Lake Speer</option>
+                        <option value="Virginia">Lake Virginia</option>
+                    </datalist>
+                    </select>
+
+                    <input id="lake-selector-button" type="button" onclick="chooseLake()" value="Choose">
+                    <span style="display:none;" id="error-lake"><p>You must select a <span style="display:none;" id="error-incorrect-lake"> valid</span>
+                    lake</p></span>
+                    </input>
+                </div>
+
+            </div>
+
+            <div id="popup" class="modal" tabindex="-1" role="dialog" style="display:none">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 id="modal-title" class="modal-title">Lake Grade</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closePopup()">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="modal-body" class="container-fluid">
+                                <div class="col-md"><img id="lakeImage" class="img-fluid" src="" alt="Image of the selected lake"></div>
+                                <h1 id="lakeGrade" class="col-md">placeholder</h1>
+                                <ul class="col-md">
+                                    <li><a id="rainfall-link" href="Pages/Rainfall.html">Rainfall data</a></li>
+                                    <li><a id="chemical-link" href="Pages/Chemical.html">Chemical data</a></li>
+                                    <li><a id="animal-link" href="Pages/AnimalLife.html">Animal Life</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Breaks for spacing with the footer -->
+        <br><br><br><br>
+        
+    </main>
+
+
+    <!-- Footer ---------------------------------------------------------------------->
+    <footer class="bg-info text-white">
+        <div id="footer" class="container">
+            <div class="row">
+                <!-- Address-->
+                <div class="col-4">
+                    <p><strong>Address</strong></p>
+                    <p>1000 Holt Avenue Winter Park, <br>FL 32789</p>
+                </div>
+                <!-- Sources-->
+                <div class="col-4">
+                    <p><strong>Sources</strong></p>
+                    <a id="sources" href="Pages/Sources.html">Click here to see all sources</a>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-4">
+                    <p><strong>Contact Us</strong></p>
+                    <p>Email: freshwateralliance@rollins.edu</p>
+                    <p>Phone: (111) 111-1111</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- could not find their page-->
+                    <a href="https://facebook.com">
+                        <img src = "../Images/facebook-logo.png" alt="Facebook" width="30">
+                    </a>
+                </div>
+                <div class="col">
+                    <!-- could not find their page-->
+                    <a href="https://twitter.com">
+                        <img src = "../Images/twitter-logo.png" alt="Twitter" width="30">
+                    </a>
+                </div>
+                <div class="col">
+                    <!-- could not find their page-->
+                    <a href="https://www.instagram.com/freshwateralliance_rollins/">
+                        <img src = "../Images/instagram-logo.png" alt="Instagram" width="30">
+                    </a>
+                </div>
+                <div class="col">
+                    <!-- could not find their page-->
+                    <a href="https://linkedin.com">
+                        <img src = "../Images/linkedin-logo.png" alt="LinkedIn" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+
+
+</html>

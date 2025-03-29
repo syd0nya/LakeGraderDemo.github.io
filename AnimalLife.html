@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animal Life</title>
+
+    <!-- Bootstrap CSS 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>-->
+
+    <!-- Bootstrap CSS had to change this for footer to work-->
+    <link href="Subpages.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font link -->
+    <link href='https://fonts.googleapis.com/css?family=Swanky and Moo Moo' rel='stylesheet'>
+
+</head>
+
+<body>    
+
+    <header id="header" class="row">
+        <div id="logoDiv" class="col-2">
+            <img src="../Images/logoPlaceholder.jpg" alt="Lake Grader logo" id="logo">
+        </div>
+    
+        <div id="title" class="col-10">
+            <span id="titleText"><em><strong>Animal Life</strong></em></span>
+        </div>
+
+    </header>
+
+    <!-- Nav bar -->
+    <nav class="navbar" id="navBar">
+        <p id="navBar"><a id="homePage" href="../index.html">Home</a><span id="lakePage-span" > > <a id="lakePage" href="../index.html">Lake
+                    </a></span></p>
+    </nav>
+
+    <!-- Content section -->
+    <main id="hmain">
+    <div class="content col-md-6">
+        <p>
+            Animal life is a big part of Florida. Florida has more than 1,700 streams and rivers,
+            7,800 freshwater lakes, over 1,000 springs, and 11 million acres of wetlands.
+            The large freshwaters in Florida host the highest diversity of freshwater animals
+            due to the high gradient of rivers and streams, proximity to the continental landmass,
+            and the presence of karst features such as sinkholes and caves.
+        </p>
+        <p>
+            In Florida, lakes are a vital ecosystem for animals such as fish, frogs, insects,
+            migratory birds, alligators, cottonmouths, water snakes, and more.
+        </p>
+        <h3> Facts about Animal Life in Florida: </h3>
+        <ul>
+            <li>There are only 2 species of alligators found worldwide - one in Florida, and the other in China.</li>
+            <li>South Florida is the only place where alligators and crocodiles coexist.</li>
+            <li>Florida Lakes are the home of many beautiful and wonderful bird species.</li>
+            <li>Snakes are present in every Florida freshwater body as well as on land.</li>
+        </ul>
+
+    </div>
+
+    <!-- Animal Life in Orange County Info -->
+    <div class = "content col-md-6 mt-4">
+        <label for="selectAnimal">Choose an Animal Category to learn more:</label>
+        <select id="selectAnimal" class="form-select" onchange="updatedescriptionofcategory()">
+            <option value ="">Select a Category</option>
+            <option value ="mammals">Mammals</option>
+            <option value="birds">Birds</option>
+            <option value="reptiles">Reptiles</option>
+            <option value="amphibians">Amphibians</option>
+            <option value="fish">Fish</option>
+        </select>
+    </div>
+
+    <!-- Description for each category of animal -->
+    <div id ="descriptionofcategory" class="content col-md-6 mt-4"></div>
+  
+    </main>
+    
+    <footer class="bg-info text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Address-->
+                <div class="col-4">
+                    <p><strong>Address</strong></p>
+                    <p>1000 Holt Avenue Winter Park, <br>FL 32789</p>
+                </div>
+                <!-- Sources-->
+                <div class="col-4">
+                    <p><strong>Sources</strong></p>
+                    <a id="sources" href="Sources.html">Click here to see all sources</a>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-4">
+                    <p><strong>Contact Us</strong></p>
+                    <p>Email: freshwateralliance@rollins.edu</p>
+                    <p>Phone: (111) 111-1111</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://facebook.com">
+                        <img src = "../Images/facebook-logo.png" alt="Facebook" width="30">
+                    </a>
+                </div>
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://twitter.com">
+                        <img src = "../Images/twitter-logo.png" alt="Twitter" width="30">
+                    </a>
+                </div>
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://www.instagram.com/freshwateralliance_rollins/">
+                        <img src = "../Images/instagram-logo.png" alt="Instagram" width="30">
+                    </a>
+                </div>
+                <div class="col center">
+                    <!-- could not find their page-->
+                    <a href="https://linkedin.com">
+                        <img src = "../Images/linkedin-logo.png" alt="LinkedIn" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="AnimalLife.js"></script>
+
+</body>
+
+
+</html>
